@@ -51,7 +51,6 @@ public class Main
                 x++;
             }
             System.out.println("Enter Head Number");
-            System.out.println("test");
             int headNumber=sc.nextInt();
             //SCAN s=new SCAN();
             //s.SCAN(seq,headNumber,ds,dir);
