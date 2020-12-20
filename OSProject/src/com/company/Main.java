@@ -9,7 +9,6 @@ public class Main
     {
         System.out.println("-----------------------------");
         System.out.println("Choose algorithm to apply : ");
-        System.out.println("mai");
         System.out.println("1-FCFS Disk Scheduling Algorithm");
         System.out.println("2-SCAN Disk Scheduling Algorithm");
         System.out.println("3-SSTF Disk Scheduling Algorithm");
