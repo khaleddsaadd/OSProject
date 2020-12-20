@@ -53,8 +53,8 @@ public class Main
             }
             System.out.println("Enter Head Number");
             int headNumber=sc.nextInt();
-            //SCAN s=new SCAN();
-            //s.SCAN(seq,headNumber,ds,dir);
+            SCAN s=new SCAN();
+            s.SCAN(seq,headNumber,ds,dir);
 
         }
         else if(choice ==3)
