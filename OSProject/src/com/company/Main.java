@@ -11,6 +11,7 @@ public class Main
         System.out.println("Choose algorithm to apply : ");
         System.out.println("1-FCFS Disk Scheduling Algorithm");
         System.out.println("2-SCAN Disk Scheduling Algorithm");
+        System.out.println("3-SSTF Disk Scheduling Algorithm");
         Scanner sc=new Scanner(System.in);
         int choice=sc.nextInt();
         if(choice == 1)
@@ -55,6 +56,23 @@ public class Main
             //SCAN s=new SCAN();
             //s.SCAN(seq,headNumber,ds,dir);
 
+        }
+        else if(choice ==3)
+        {
+            System.out.println("Enter number of Sequences");
+            int numOfSeq = sc.nextInt();
+            int [] seq = new int[numOfSeq];
+            int x=1;
+            for(int i=0;i<numOfSeq;i++)
+            {
+                System.out.println("Enter sequence number "+x);
+                seq[i] = sc.nextInt();
+                x++;
+            }
+            System.out.println("Enter Head Number");
+            int headNumber=sc.nextInt();
+            SSTF sstf = new SSTF();
+            sstf.SSTF(seq,headNumber);
         }
     }
 }
