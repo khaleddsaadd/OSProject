@@ -14,6 +14,7 @@ public class Main
         System.out.println("3-SSTF Disk Scheduling Algorithm");
         System.out.println("4-C-SCAN Disk Scheduling Algorithm");
         System.out.println("5-LOOK Disk Scheduling Algorithm");
+        System.out.println("6-C-LOOK Disk Scheduling Algorithm");
         Scanner sc=new Scanner(System.in);
         int choice=sc.nextInt();
         if(choice == 1)
@@ -126,6 +127,24 @@ public class Main
             int headNumber=sc.nextInt();
             LOOK s=new LOOK();
             s.LOOK(seq,headNumber,ds,dir);
+
+        }
+        else if(choice==6)
+        {
+            System.out.println("Enter number of Sequences");
+            int numOfSeq = sc.nextInt();
+            int [] seq = new int[numOfSeq];
+            int x=1;
+            for(int i=0;i<numOfSeq;i++)
+            {
+                System.out.println("Enter sequence number "+x);
+                seq[i] = sc.nextInt();
+                x++;
+            }
+            System.out.println("Enter Head Number");
+            int headNumber=sc.nextInt();
+            CLook cl = new CLook();
+            cl.CLook(seq,headNumber);
 
         }
     }
