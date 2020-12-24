@@ -33,14 +33,16 @@ public class LOOK {
                 left[i] = seq[i];
             }
         }
-        for (int c = 0; c < seq.length; c++) {
+        for (int c = 0; c < seq.length; c++)
+        {
             if (seq[c] > HeadNo) {
                 right[c] = seq[c];
             }
         }
 
 
-        if (dir == 1) {
+        if (dir == 1)
+        { // 41 34 11 60 79 92 114 176
             bubbleSort(seq);
             int j = 0;
             for (int l = left.length - 1; l >= 0; l--) {
@@ -54,8 +56,10 @@ public class LOOK {
             }
 
 
-            for (int r = 0; r < right.length; r++) {
-                if (right[r] > 0) {
+            for (int r = 0; r < right.length; r++)
+            {
+                if (right[r] > 0)
+                {
 
                     squence_S[j] = right[r];
                     j++;
@@ -64,19 +68,20 @@ public class LOOK {
 
             }
 
-            System.out.println("Lower: ");
+            System.out.println("Sequence of Lower Bound ");
 
-            for (int c = 0; c < squence_S.length; c++) {
-                if (squence_S[c] != 0) {
+            for (int c = 0; c < squence_S.length; c++)
+            {
+                if (squence_S[c] != 0)
+                {
 
                     System.out.print(squence_S[c] + " ");
 
+
+                    distance = Math.abs(squence_S[c] - HeadNo);
+                    seek += distance;
+                    HeadNo = squence_S[c];
                 }
-
-                distance = Math.abs(squence_S[c] - HeadNo);
-                seek += distance;
-                HeadNo = squence_S[c];
-
 
             }
             System.out.println();
@@ -84,7 +89,9 @@ public class LOOK {
         }
 
 
-        if (dir == 2) { //60 79 92 114 176 41 34 11
+
+        if (dir == 2)
+        { //60 79 92 114 176 41 34 11
             bubbleSort(seq);
             int u = 0;
 
@@ -111,24 +118,31 @@ public class LOOK {
 
                 }
 
+
             }
-
             System.out.println("Sequence of Upper Bound :");
-            for (int uq = 0; uq < S.length; uq++) {
-
+            for (int uq = 0; uq < S.length; uq++)
+               {
 
                 if (S[uq] != 0)
                 {
                     System.out.print(S[uq] + " ");
+
+
+                    distance = Math.abs(S[uq] - HeadNo);
+                    seekup += distance;
+                    HeadNo = S[uq];
                 }
-                distance = Math.abs(S[uq] - HeadNo);
-                seekup += distance;
-                HeadNo = S[uq];
-
-            }
         }
-        System.out.println();
-        System.out.println("Number of seeks : " + (seekup));
-    }
 
+            System.out.println();
+            System.out.println("Number of seeks : " + (seekup));
+
+        }
+
+
+
+
+
+    }
 }
