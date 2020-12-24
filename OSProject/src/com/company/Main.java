@@ -99,8 +99,8 @@ public class Main
             }
             System.out.println("Enter Head Number");
             int headNumber=sc.nextInt();
-            //CSCAN s=new CSCAN();
-            //s.CSCAN(seq,headNumber,ds,dir);
+            CSCAN s=new CSCAN();
+            s.CSCAN(seq,headNumber,ds,dir);
 
         }
 
