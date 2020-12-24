@@ -47,6 +47,55 @@ public class CSCAN {
         }
 
 
+        if (dir == 1)
+        {
+
+            int j = 0;
+            for (int l = left.length - 1; l >= 0; l--)
+            {
+
+                if (left[l] != 0) {
+                    squence_S[j] = left[l];
+                    j++;
+                }
+
+                if (squence_S[j] == left[left.length - 1])
+                {
+                    squence_S[j] = ds - 1;
+                }
+
+            }
+
+
+            for (int r = right.length - 1; r > 0; r--)
+            {
+
+                if (right[r] > 0)
+                {
+                    j++;
+                    squence_S[j] = right[r];
+
+
+                }
+            }
+
+            System.out.println("sequence: ");
+
+            for (int c = 0; c < squence_S.length; c++)
+            {
+
+                System.out.print(squence_S[c] + " ");
+
+                if (squence_S[c] == left[0])
+                {
+                    System.out.print("0 ");
+                }
+
+            }
+        }
+
+
+
 
         if (dir == 2)
         {   //65 67 98 122 124 183 199 0 14 41
