@@ -136,7 +136,7 @@ public class LOOK {
         }
 
             System.out.println();
-            System.out.println("Number of seeks : " + (seekup));
+            System.out.println("Total Head Movement = : " + (seekup) + " Cylinder");
 
         }
 
