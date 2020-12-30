@@ -53,6 +53,6 @@ public class SSTF
             System.out.print(newseq[i] + " ");
         }
         System.out.println();
-        System.out.println("Total Head Movements = " + moves + " Cylinder");
+        System.out.println("Total Head Movements = " + moves + "Cylinder");
     }
 }

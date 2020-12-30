@@ -68,6 +68,6 @@ public class CLook
             totalmov += Math.abs(allSeq[i] - headNo);
             headNo = allSeq[i];
         }
-        System.out.println("Total Head Movements = " + totalmov);
+        System.out.println("Total Head Movements = " + totalmov + "Cylinder");
     }
 }
